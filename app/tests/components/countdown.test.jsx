@@ -28,12 +28,12 @@ describe('Countdown', () => {
 
 		it('should NOT set count state below zero', (done) => {
 			var countdown = TestUtils.renderIntoDocument(<Countdown />);
-			countdown.handleSetCountdown(2);
+			countdown.handleSetCountdown(1);
 
 			setTimeout(() => {
 				expect(countdown.state.count).toBe(0);
 				done();
-			}, 4000)
+			}, 2000)
 		})
 	});
 });
