@@ -16,7 +16,6 @@ var Clock = React.createClass({
 				if (el < 10) {
 					el = '0' + el;
 				}
-				console.log(el, array);
 				array[index] = el;
 			});
 			return arr;
